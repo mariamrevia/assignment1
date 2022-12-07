@@ -1,0 +1,124 @@
+.listbox--div {
+    width: 563px;
+    height: 205px;
+    background: #EAFAFF;
+    /* ლურჯი/300 */
+    align-items: center;
+    display: flex;
+
+
+    border: 1px solid #AED1EA;
+    border-radius: 20px;
+    margin-bottom: 55px;
+}
+
+.NameSurname {
+    height: 21px;
+    width: 255px
+}
+
+
+.characteristics {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    margin-left: 24px;
+
+
+}
+
+.moreinfo--btn {
+    display: flex;
+    margin-top: 40px;
+    background-color: #EAFAFF;
+    width: 120px;
+    height: 30px;
+    color: #4386A9;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.listPage--img {
+    display: flex;
+    height: 178px;
+    width: 266px;
+    border-radius: 8px;
+    margin-left: 8px;
+}
+
+.LaptopName {
+    Width: 81px;
+    Height: 21px;
+}
+
+
+
+@media (max-width:400px) {
+    .listbox--div {
+        Width: 358px;
+        Height: 123px;
+        background: #EAFAFF;
+        /* ლურჯი/300 */
+        align-items: center;
+        display: flex;
+
+        
+        border: 1px solid #AED1EA;
+        border-radius: 20px;
+        margin-bottom: 16px;
+    }
+
+
+    .characteristics {
+        display: flex;
+        flex-direction: column;
+        Width: 140px;
+        Height: 80px;
+        margin-left: 16px;
+    }
+
+    .moreinfo--btn {
+        display: flex;
+        margin-top: 11px;
+        background-color: #EAFAFF;
+        width: 120px;
+        height: 30px;
+        color: #4386A9;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: underline;
+        padding: 0%;
+    }
+
+    .listPage--img {
+        display: flex;
+        width: 164px;
+        height: 109px;
+        border-radius: 8px;
+        margin-left: 8px;
+    }
+
+    .NameSurname {
+        height: 21px;
+        font-size: 14px;
+        width: 150px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        
+
+    }
+    .LaptopName {
+        Width: 160px;
+        Height: 21px;
+        font-size: small;
+        margin-bottom: 0%;
+        margin-top: 8px;
+    }
+
+   
+}

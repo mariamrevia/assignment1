@@ -1,0 +1,146 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0%;
+  
+}
+
+@font-face {
+  font-family: "Halvetica";
+  src: url("./fonts/Helvetica Neue Medium Extended/Helvetica Neue Medium Extended.ttf");
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  height: 97px;
+}
+
+.img2 {
+  display: flex;
+  width: 112px;
+  height: 18px;
+  margin-top: 79px;
+}
+
+
+
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+  height: 482px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  height: 293px;
+  margin-top: 123px;
+
+
+
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+
+}
+
+.img1 {
+  Width: 781px;
+  Height: 482px;
+}
+
+button {
+  width: 387px;
+  height: 60px;
+  background: #62A1EB;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Halvetica';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+/* 
+picture {
+  Width:268.58px;
+  Height:349px;
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+
+  height: 482px;
+} */
+
+
+@media (max-width:400px) {
+  .img1 {
+
+    Width: 268.58px;
+    Height: 349px;
+
+  }
+
+  .picture {
+    display: flex;
+    justify-content: center;
+
+    Width: 268.58px;
+    Height: 349px;
+  }
+
+  .App {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    height: 349px;
+    margin-top: 117px;
+
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    height: 136px;
+    margin-top: 122px;
+
+  }
+
+  button {
+    width: 358px;
+    height: 60px;
+    background: #62A1EB;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Halvetica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    height: 85px;
+  }
+  .img2 {
+    display: flex;
+    width: 112px;
+    height: 18px;
+    margin-top: 67px;
+  }
+}

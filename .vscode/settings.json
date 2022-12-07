@@ -1,0 +1,5 @@
+{
+    "git.autofetch": true,
+    "git.alwaysShowStagedChangesResourceGroup": false,
+    "git.enabled": true
+}

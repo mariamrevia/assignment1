@@ -1,0 +1,472 @@
+@font-face {
+    font-family: "Halvetica";
+    src: url("./fonts/Helvetica Neue Medium Extended/Helvetica Neue Medium Extended.ttf");
+}
+
+
+.main--section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.detailedPage--header {
+    width: 309px;
+    height: 21px;
+    left: 806px;
+    top: 76px;
+
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 21px;
+    /* identical to box height, or 62% */
+
+    display: flex;
+    align-items: center;
+    margin-top: 76px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 84px;
+    width: 1178px;
+    height: 342px;
+
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 54px;
+    width: 1178px;
+    height: 212px;
+
+}
+
+.list-section2 {
+    display: flex;
+    Width: 212px;
+    Height: 212px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    flex-direction: column;
+    padding: 0%;
+    margin-top: 0%;
+
+}
+
+.value-list-section2 {
+    list-style-type: none;
+    width: 134px;
+    height: 80px;
+    padding: 0px;
+    margin-top: 0px;
+    color: #797979;
+    line-height: 27px;
+
+
+}
+.value--section2--div {
+    display: flex;
+    flex-direction: row;
+}
+.list-section2--div {
+    display: flex;
+    flex-direction: row;
+}
+
+.value--section2 {
+    margin-left: 88px;
+
+}
+
+.info-section1 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin-top: 44px;
+    width: 192px;
+    height: 300px;
+    margin-left: 68px;
+
+}
+.value-list-div {
+    margin-left: 211px;
+}
+
+.image-section1 {
+    display: flex;
+    border-radius: none;
+}
+
+.detailedImage {
+    width: 577px;
+    height: 342px;
+    border-radius: "none"
+}
+
+.list-section1 {
+    list-style-type: none;
+    width: 151px;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+.last-list-section {
+    display: flex;
+    Width: 212px;
+    Height: 212px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    flex-direction: column;
+    padding: 0%;
+    margin-top: 0%;
+
+}
+
+li {
+    margin-bottom: 27px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.value--section1 {
+    margin-left: 80px;
+}
+
+
+.value-list-section1 {
+    list-style-type: none;
+    width: 300px;
+    height: 270px;
+    padding: 0px;
+    margin-top: 0px;
+    color: #797979;
+    line-height: 29px;
+
+}
+.value-list-section2-div {
+    margin-left: 0px;
+}
+
+.list--hr1 {
+    Width: 1178px;
+    border: 1px solid #A5A5A5;
+    display: flex;
+    margin-top: 84px;
+    margin-bottom: 0%;
+}
+
+.list--hr2 {
+    Width: 1178px;
+    border: 1px solid #A5A5A5;
+    display: flex;
+    margin-top: 23px;
+    margin-bottom: 0%;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 54px;
+    width: 1178px;
+    height: 212px;
+}
+.value-section3-div {
+    margin-left: 211px;
+    display: flex;
+    flex-direction: row;
+}
+.value-section3--div {
+    margin-left: 211px;
+}
+
+/* .list-section3 {
+    display: flex;
+    Width:281px;
+Height:135px;
+} */
+.list-section3 {
+    display: flex;
+    Width: 281px;
+    Height: 135px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    flex-direction: column;
+    padding: 0%;
+    margin-top: 0%;
+
+}
+.list-section3--div{
+    display: flex;
+    flex-direction: row;
+}
+
+.last-list-section-div {
+    margin-left: 0px;
+}
+.value-section2--div {
+    margin-Left: 19px; 
+}
+.value-list-section3 {
+    list-style-type: none;
+    width: 134px;
+    height: 80px;
+    padding: 0px;
+    margin-top: 0px;
+    color: #797979;
+    line-height: 27px;
+
+}
+
+@media (max-width:400px){
+    .main--section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+    
+    }
+    .detailedPage--header {
+        width: 146px;
+        height: 20px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        /* identical to box height, or 62% */
+        display: flex;
+        align-items: center;
+        margin-top: 31px;
+        text-align: center;
+    
+        color: #000000;
+    }
+
+    .section1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 33px;
+        width: 390px;
+        height: 220px;
+    
+    }
+    .detailedImage {
+        width: 358px;
+        height: 191px;
+        border-radius: "none"
+    }
+
+    .info-section1 {
+        display: flex;
+        justify-content: space-between;
+       
+        margin-top: 29px;
+        Width:358px;
+        height: 150px;
+        margin-left: 0px;
+    
+    }
+    
+    .list-section1 {
+        list-style-type: none;
+        width: 126px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-right: 61px;
+    
+    }
+    li {
+        margin-bottom: 10px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .value--section1 {
+        margin-left: 0px;
+    }
+
+    .value-list-section1 {
+        list-style-type: none;
+        width:  191px;
+        height:  150px;
+        padding: 0px;
+        margin-top: 0px;
+        color: #797979;
+        line-height: 19px;
+       
+    
+    }
+    .list--hr1 {
+        Width: 358px;
+        border: 1px solid #A5A5A5;
+        display: flex;
+        margin-top: 192px;
+        margin-bottom: 0%;
+    }
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 23px;
+        width: 358px;
+        height: 171px;
+    
+    }
+    .list-section2 {
+        display: flex;
+        Width:  152px;
+        Height: 100px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        flex-direction: column;
+        padding: 0%;
+        margin-top: 0%;
+      
+    
+    }
+    .value--section2--div {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0%;
+        height: 100px;
+        margin-top: 20px;
+       
+    }
+    .list-section2--div {
+        display: flex;
+        flex-direction: row;
+        height: 140px;
+       
+    }
+   
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        width: 358px;
+        height: 146px;
+        margin-top: 23px;
+    }
+    .list-section3 {
+        display: flex;
+        Width: 126px;
+        Height: 146px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        flex-direction: column;
+        padding: 0%;
+        margin-top: 0%;
+    
+    }
+    .list-section3--div{
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+    }
+  
+    .value-list-div {
+        margin-left: 0px;
+    }
+
+    .list--hr2 {
+        Width: 358px;
+        border: 1px solid #A5A5A5;
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 0%;
+    }
+    .value--section2 {
+        margin-left: 15px;
+    
+    }
+    
+    .value-list-section2-div {
+        margin-left: 15px;
+    }
+.value-list-section3 {
+    list-style-type: none;
+    width: 134px;
+    height: 80px;
+    padding: 0px;
+    margin-top: 0px;
+    color: #797979;
+    line-height: 27px;
+    margin-left: 42px;
+
+}
+    .value-section3-div {
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        margin-left: 0%;
+    }
+    .value-section3--div {
+        margin-left: 42px;
+    }
+   
+    .last-list-section {
+        display: flex;
+        Width: 126px;
+        Height: 50px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 27px;
+        flex-direction: column;
+        padding: 0%;
+        margin-top: 0%;
+    
+    }
+    
+    .last-list-section-div {
+        margin-left: 42px;
+    }
+    .value-section2--div {
+        margin-left: 42px; 
+
+    }
+    .value-list-section2 {
+    
+        width: 170px;
+    
+    }
+
+
+    
+}
+
