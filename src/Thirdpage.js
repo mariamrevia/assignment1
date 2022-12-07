@@ -8,7 +8,7 @@ import Radiobotton from "./components/Radiobotton"
 import Smallinputs from './components/smallinputs'
 import { useNavigate, useLocation } from 'react-router-dom'
 import img7 from "./images/Picture7.png"
-import img12 from "./images/Picture12.png"
+
 import Media from "react-media"
 
 function Thirdpage() {
