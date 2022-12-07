@@ -45,19 +45,7 @@ body {
 
 
 }
-
-.picture {
-  display: flex;
-  justify-content: center;
-
-}
-
-.img1 {
-  Width: 781px;
-  Height: 482px;
-}
-
-button {
+.home--button {
   width: 387px;
   height: 60px;
   background: #62A1EB;
@@ -70,19 +58,24 @@ button {
   line-height: 24px;
   color: #FFFFFF;
   cursor: pointer;
-}
- 
 
-/* 
-picture {
-  Width:268.58px;
-  Height:349px;
+}
+.home--button:hover {
+  background-color: 
+  #1A5DAB;
+}
+
+.picture {
   display: flex;
   justify-content: center;
-  margin-top: 85px;
 
-  height: 482px;
-} */
+}
+
+.img1 {
+  Width: 781px;
+  Height: 482px;
+}
+
 
 
 @media (max-width:400px) {
