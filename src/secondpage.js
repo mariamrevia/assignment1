@@ -3,7 +3,7 @@ import img7 from "./images/Picture7.png"
 import "./Secondpage.css"
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
-import { BsChevronLeft,BsChevronDown, BsChevronUp} from "react-icons/all"
+import { BsChevronLeft, BsChevronDown, BsChevronUp } from "react-icons/all"
 
 
 function Secondpage() {
@@ -131,7 +131,7 @@ function Secondpage() {
     console.log(formData)
   }
   const handlegoingBack = () => {
-   
+
     navigate("/")
   }
 
@@ -200,190 +200,193 @@ function Secondpage() {
     return errors;
   }
 
-// const mediaQuery =  window.matchMedia('(max-width: 400px)')
+  // const mediaQuery =  window.matchMedia('(max-width: 400px)')
 
-// const handleMedia = () => {
-//   if(mediaQuery.matches) {
-//     return <p className='page-number'>1/2</p>
-//   }
-// }
+  // const handleMedia = () => {
+  //   if(mediaQuery.matches) {
+  //     return <p className='page-number'>1/2</p>
+  //   }
+  // }
   return (
 
-<div>
-    <div className='section'>
-    
-      <div className='btn--section'>
-        <div className='back-button-div'>
-          <div
-            className='back--button-2'
-            onClick={handlegoingBack}
-          ><BsChevronLeft className='back-icon' />
-          </div>
-        </div>
+    <div>
+      <div className='section'>
 
-        <div className='headings'>
-          <div className='btn-underline'>
+        <div className='btn--section'>
+          <div className='back-button-div'>
+            <div
+              className='back--button-2'
+              onClick={handlegoingBack}
+            ><BsChevronLeft className='back-icon' />
+            </div>
+          </div>
+
+          <div className='headings'>
+            <div className='btn-underline'>
+              <button
+                onClick={() => navigate("/Secondpage")}
+                className="info--btn">თანამშრომლების ინფო</button>
+              <div className="underline"></div>
+
+            </div>
+
+
             <button
-              onClick={() => navigate("/Secondpage")}
-              className="info--btn">თანამშრომლების ინფო</button>
-              <div className= "underline"></div>
-              
+              onClick={() => navigate("/Thirdpage")}
+              className='char--btn'>ლეპტოპის მახასიათებლები
+            </button>
           </div>
-          
-
-          <button 
-            onClick={() => navigate("/Thirdpage")}
-            className='char--btn'>ლეპტოპის მახასიათებლები
-          </button>
         </div>
-      </div>
-      <p className='page-number'>1/2</p>
+        <p className='page-number'>1/2</p>
 
 
-      <form
-        onSubmit={handlesubmit}
-        className='form'>
-        <div className='form--div'>
-          <div className='firstandlastname'>
+        <form
+          onSubmit={handlesubmit}
+          className='form'>
+          <div className='form--div'>
+            <div className='firstandlastname'>
 
-            <div className="firstnamediv">
-              <div>
-                <h3 className={formErrors.name ? "formerrors" : ""}>სახელი</h3>
-                <input
-                  className={formErrors.name ? "boxError" : "fninput--lninput"}
-                  name="name"
-                  onChange={handleformdata}
-                  value={formData.name}
+              <div className="firstnamediv">
+                <div>
+                  <h3 className={formErrors.name ? "formerrors" : ""}>სახელი</h3>
+                  <input
+                    placeholder='გრიშა'
+                    className={formErrors.name ? "boxError" : "fninput--lninput"}
+                    name="name"
+                    onChange={handleformdata}
+                    value={formData.name}
 
-                ></input>
-                {formErrors.name ?
-                  <p className='formerrors'>{formErrors.name}</p> :
-                  <p>მინიმუმ 2 სიმბოლო,ქართული ასოებით</p>}
-              </div>
-            </div>
-            <div className='lastnamediv'>
-              <div>
-                <h3 className={formErrors.surname ? "formerrors" : ""}>გვარი</h3>
-                <input
-                  className={formErrors.surname ? "boxError" : "fninput--lninput"}
-                  name="surname"
-                  onChange={handleformdata}
-                  value={formData.surname}
-
-
-                ></input>
-                {formErrors.surname ?
-                  <p className="formerrors">{formErrors.surname}</p> :
-                  <p>მინიმუმ 2 სიმბოლო,ქართული ასოებით</p>}
-
-              </div>
-
-            </div>
-          </div>
-
-          <div className='dropdown--div'>
-
-            <div className={!formErrors.team_id ? "team-dpd" : "team-dpd-error"}>
-              <div className='team-dpd-btn'
-                name="team_id"
-                onClick={(e) => {
-                  setIsDivActive(!isdivActive)
-                  
-                }}
-              >
-                {teamSelected ? teamSelected : "გუნდი"}
-                {!isdivActive ?
-                 <BsChevronDown /> :
-                  <BsChevronUp />}
-              </div>
-              {isdivActive && (
-                <div className='team-dpd-content'>
-                  {teams.map(((team) => {
-                    return (
-                      <div
-                        className='option'
-                        onClick={(event) => handleChange(event, team.id, team.name)}
-                      >{team.name}</div>
-                    )
-                  }))}
+                  ></input>
+                  {formErrors.name ?
+                    <p className='formerrors'>{formErrors.name}</p> :
+                    <p>მინიმუმ 2 სიმბოლო,ქართული ასოებით</p>}
                 </div>
-              )}
+              </div>
+              <div className='lastnamediv'>
+                <div>
+                  <h3 className={formErrors.surname ? "formerrors" : ""}>გვარი</h3>
+                  <input
+                    placeholder='ბაგრატიონი'
+                    className={formErrors.surname ? "boxError" : "fninput--lninput"}
+                    name="surname"
+                    onChange={handleformdata}
+                    value={formData.surname}
+
+
+                  ></input>
+                  {formErrors.surname ?
+                    <p className="formerrors">{formErrors.surname}</p> :
+                    <p>მინიმუმ 2 სიმბოლო,ქართული ასოებით</p>}
+
+                </div>
+
+              </div>
             </div>
 
-            <div className='position-dpd'>
-              <div className={!formErrors.position_id ? 'position-dpd' : "position-dpd--err"}>
-                <div
-                  className='position-dpd-btn'
-                  name="position_id"
-                  onClick={
-                    (e) => {
-                      setIsPosDivActive(!isposdivActive)
-                    }}
+            <div className='dropdown--div'>
+
+              <div className={!formErrors.team_id ? "team-dpd" : "team-dpd-error"}>
+                <div className='team-dpd-btn'
+                  name="team_id"
+                  onClick={(e) => {
+                    setIsDivActive(!isdivActive)
+
+                  }}
                 >
-                  {positionSelected ? positionSelected : "პოზიცია"}
-                  {!isposdivActive? <BsChevronDown /> :
-                  <BsChevronUp />}
+                  {teamSelected ? teamSelected : "გუნდი"}
+                  {!isdivActive ?
+                    <BsChevronDown /> :
+                    <BsChevronUp />}
                 </div>
-
-                {isposdivActive && (
-                  <div className='position-dpd-content'>
-                    {newposition.map(((position) => {
+                {isdivActive && (
+                  <div className='team-dpd-content'>
+                    {teams.map(((team) => {
                       return (
                         <div
                           className='option'
-                          onClick={(event) => handlePosition(event, position.id, position.name)}
-                        >{position.name}</div>
+                          onClick={(event) => handleChange(event, team.id, team.name)}
+                        >{team.name}</div>
                       )
                     }))}
                   </div>
                 )}
               </div>
+
+              <div className='position-dpd'>
+                <div className={!formErrors.position_id ? 'position-dpd' : "position-dpd--err"}>
+                  <div
+                    className='position-dpd-btn'
+                    name="position_id"
+                    onClick={
+                      (e) => {
+                        setIsPosDivActive(!isposdivActive)
+                      }}
+                  >
+                    {positionSelected ? positionSelected : "პოზიცია"}
+                    {!isposdivActive ? <BsChevronDown /> :
+                      <BsChevronUp />}
+                  </div>
+
+                  {isposdivActive && (
+                    <div className='position-dpd-content'>
+                      {newposition.map(((position) => {
+                        return (
+                          <div
+                            className='option'
+                            onClick={(event) => handlePosition(event, position.id, position.name)}
+                          >{position.name}</div>
+                        )
+                      }))}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            <div className='mail--div'>
+              <h3 className={formErrors.email ? "formerrors" : "mail--header"}>მაილი</h3>
+              <input
+
+                className={formErrors.email ? "mail-num-input-error" : "mail-num-input"}
+                placeholder='grish666@redberry.ge'
+                name="email"
+                onChange={handleformdata}
+                value={formData.email}
+
+              ></input>
+              {formErrors.email ?
+                <p className="formerrors">{formErrors.email}</p> :
+                <p>უმდა მთავრდებოდეს redberry.ge-თი</p>}
+
+            </div>
+            <div className='number--div'>
+              <h3 className={formErrors.phone_number ? "formerrors" : "phone--number"}>ტელეფონის ნომერი</h3>
+              <input
+                placeholder='+995 598 00 07 01'
+                className={formErrors.phone_number ? "mail-num-input-error " : "mail-num-input"}
+                name="phone_number"
+                onChange={handleformdata}
+                value={formData.phone_number}
+              ></input>
+              {formErrors.phone_number ?
+                <p className='formerrors'>{formErrors.phone_number}</p> :
+                <p>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>}
+
+            </div>
+
+            <div className='next--btn-div'>
+              <button
+                className='next--btn'
+                type="submit">შემდეგი</button>
             </div>
           </div>
 
-          <div className='mail--div'>
-            <h3 className={formErrors.email ? "formerrors" : "mail--header"}>მაილი</h3>
-            <input
-
-              className={formErrors.email ? "mail-num-input-error" : "mail-num-input"}
-
-              name="email"
-              onChange={handleformdata}
-              value={formData.email}
-
-            ></input>
-            {formErrors.email ?
-              <p className="formerrors">{formErrors.email}</p> :
-              <p>უმდა მთავრდებოდეს redberry.ge-თი</p>}
-
-          </div>
-          <div className='number--div'>
-            <h3 className={formErrors.phone_number ? "formerrors" : "phone--number"}>ტელეფონის ნომერი</h3>
-            <input
-              className={formErrors.phone_number ? "mail-num-input-error " : "mail-num-input"}
-              name="phone_number"
-              onChange={handleformdata}
-              value={formData.phone_number}
-            ></input>
-            {formErrors.phone_number ?
-              <p className='formerrors'>{formErrors.phone_number}</p> :
-              <p>უნდა აკმაყოფილებდეს ქართული მობ-ნომრის ფორმატს</p>}
-
-          </div>
-
-          <div className='next--btn-div'>
-            <button
-              className='next--btn'
-              type="submit">შემდეგი</button>
-          </div>
+        </form>
+        <div className='img7--div'>
+          <img src={img7} className="img7"></img>
         </div>
 
-      </form>
-      <div className='img7--div'>
-        <img src={img7} className="img7"></img>
       </div>
-
-    </div>
     </div>
   )
 

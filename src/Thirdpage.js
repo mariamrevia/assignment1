@@ -8,6 +8,7 @@ import Radiobotton from "./components/Radiobotton"
 import Smallinputs from './components/smallinputs'
 import { useNavigate, useLocation } from 'react-router-dom'
 import img7 from "./images/Picture7.png"
+import img12 from "./images/Picture12.png"
 import Media from "react-media"
 
 function Thirdpage() {
@@ -216,7 +217,7 @@ function Thirdpage() {
 
   const validate = (data) => {
     const errors = {}
-    const regexalphabet = /[a-zA-Z]+[0-9]+[!@#$%^&*()_+]+$/
+    const regexalphabet = /[a-zA-Z\s.,]+$/
     const regexNumber = /[0-9]$/
     console.log(errors)
 
@@ -226,7 +227,7 @@ function Thirdpage() {
     if (!data.laptop_name) {
       errors.laptop_name = "გთხოვთ შეავსოთ ველი"
     } else if (!regexalphabet.test(data.laptop_name)) {
-      errors.laptop_name = "უნდა შეიცავდეს ლათინურ ასოებს,ციფრს,!@#$%^&*()_+"
+      errors.laptop_name = "შეგიძლია გამოიყენო ლათინური ასოები, ციფრები, !@#$%^&*()_+"
     }
     if (!data.laptop_cpu_cores) {
       errors.laptop_cpu_cores = "გთხოვთ შეავსოთ ველი"
@@ -343,7 +344,7 @@ function Thirdpage() {
         className={selectedImage ? "form1 " : 'thirdpage--form'}>
 
 
- {/* ----------- image ------------- */}
+        {/* ----------- image ------------- */}
 
         <div className={`${cond5} ${cond1} `}>
           {/* {handledePhoto()} */}
@@ -387,6 +388,7 @@ function Thirdpage() {
 
                       <label className='media-image--Btn'>
                         <input
+
                           className='image--input1'
                           type="file"
                           name="laptop_image"
@@ -430,13 +432,14 @@ function Thirdpage() {
             </label>
           </div>
         </div>
-{/* ----------- image ------------- */}
+        {/* ----------- image ------------- */}
 
-{/* --------------------------------------- */}
+        {/* --------------------------------------- */}
 
         <div className={selectedImage ? "div" : "div--"}>
           <div className={selectedImage ? 'laptop--NB2' : 'laptop--NB'}>
             <Inputs
+              placeholder="HP"
               error={formErrors.laptop_name}
               name="ლეპტოპის სახელი"
               note="ლათინური ასოები, ციფრები, !@#$%^&*()_+="
@@ -512,6 +515,7 @@ function Thirdpage() {
               )}
             </div>
             <Smallinputs
+              placeholder="14"
               name="CPU-ს ბირთვი"
               note="მხოლოდ ციფრები"
               formDataName="laptop_cpu_cores"
@@ -520,6 +524,7 @@ function Thirdpage() {
 
             />
             <Smallinputs
+              placeholder="364"
               name="CPU-ს ნაკადი"
               note="მხოლოდ ციფრები"
               formDataName="laptop_cpu_threads"
@@ -530,6 +535,7 @@ function Thirdpage() {
           </div>
           <div className='third--section'>
             <Inputs
+              placeholder="16"
               name="ლეპტოპის RAM"
               note="მხოლოდ ციფრები"
               handleChange={handleChange}
@@ -564,6 +570,7 @@ function Thirdpage() {
 
             </div>
             <Inputs
+              placeholder="0000 ₾"
               name="ლეპტოპის ფასი"
               note="მხოლოდ ციფრები"
               handleChange={handleChange}

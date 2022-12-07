@@ -1,6 +1,7 @@
 .listPage--div {
+
   display: flex;
-  height: 1390px;
+  min-height: 100vh;
   align-items: center;
   flex-direction: column;
 
@@ -8,7 +9,7 @@
 
 .list--div {
   width: 1178px;
-  margin-top: 57.5px;
+  margin-top: 91px;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
@@ -20,7 +21,7 @@
   width: 1859px;
   height: 100px;
   display: flex;
-  margin-top: 39.5px;
+  margin-top: 53px;
   align-items: center;
 }
 

@@ -19,7 +19,7 @@ function Home() {
          <div className="App">
             <picture className="picture">
                <source media="(max-width:600px)" srcSet={phonePic} alt="" ></source>
-               <img className="img1" src={img2} alt=""/>
+               <img className="img1" src={img2} alt="" />
             </picture>
          </div>
 

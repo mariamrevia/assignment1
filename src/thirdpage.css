@@ -136,11 +136,16 @@ h2 {
     width: 233px;
     height: 60px;
     background: #62A1EB;
+    font-size: 20px;
     border-radius: 8px;
     margin-top: 65px;
     align-items: center;
     justify-content: center;
     color: white;
+    cursor: pointer;
+}
+.image--label:hover{
+    background-color: #1A5DAB;
 }
 
 .again--input {
@@ -193,7 +198,9 @@ h2 {
     border-radius: 8px;
     margin-top: 248px;
     display: none;
+
 }
+
 
 .image--input1 {
     width: 233px;
@@ -431,6 +438,10 @@ h2 {
     border: 1.8px solid #8AC0E2;
     border-radius: 8px;
 }
+.cpu-core-input:focus {
+    background-color:  rgba(43, 75, 242, 0.06);
+    outline: #8AC0E2;
+}
 
 .cpu-core-input-err {
     box-sizing: border-box;
@@ -487,6 +498,12 @@ h2 {
     align-self: center;
     flex-grow: 0;
     align-self: center;
+
+}
+.input--:focus {
+    background-color: rgba(43, 75, 242, 0.06);
+    outline: #8AC0E2;
+
 }
 
 .input--err {
@@ -590,7 +607,11 @@ h3 {
     border-radius: 8px;
     box-sizing: border-box;
 }
+.date--input:focus {
+   background-color:  rgba(43, 75, 242, 0.06);
+   outline: #8AC0E2;
 
+}
 .date--input--err {
     width: 407px;
     height: 60px;
@@ -622,6 +643,12 @@ h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.save--btn:hover {
+    background-color: #1A5DAB;
 }
 
 .back--btn {
@@ -634,8 +661,10 @@ h3 {
     align-items: center;
     font-size: 18px;
     padding: 0%;
-
+    border: none;
 }
+
+
 
 /* ___________ errors _________ */
 
@@ -876,6 +905,7 @@ img {
         background: none;
         color: #4386A9;
         text-align: center;
+        
 
     }
 

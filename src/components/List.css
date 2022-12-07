@@ -39,6 +39,7 @@
     font-weight: 400;
     font-size: 16px;
     text-decoration: underline;
+    border: none;
 }
 
 .listPage--img {
@@ -50,7 +51,7 @@
 }
 
 .LaptopName {
-    Width: 81px;
+    Width: 200px;
     Height: 21px;
 }
 

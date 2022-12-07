@@ -179,6 +179,10 @@ body {
     align-self: center;
 
 }
+.fninput--lninput:focus {
+    background-color: rgba(43, 75, 242, 0.06);
+    outline: #8AC0E2;
+}
 
 /* .lninput {
     width: 407px;
@@ -431,6 +435,11 @@ select {
     order: 1;
 
 }
+.mail-num-input:focus {
+   background-color:  rgba(43, 75, 242, 0.06);
+   outline: #8AC0E2;
+
+}
 
 .mail-num-input-error {
 
@@ -448,7 +457,16 @@ select {
     Height: 60px;
     background: #62A1EB;
     border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 20px;
+    
 
+}
+.next--btn:hover {
+    background-color: 
+    #1A5DAB;
 }
 
 .next--btn-div {
@@ -753,7 +771,7 @@ select {
         font-family: 'Helvetica';
         font-style: normal;
         font-weight: 700;
-        font-size: 17px;
+        font-size: 15px;
         Height: 24px;
         border: none;
         background-color: #EBEBEB;

@@ -51,15 +51,22 @@
     justify-content: center;
     position: absolute;
     padding: 18px 60px;
+    color: #FFFFFF;
     gap: 20px;
     width: 297px;
+    font-size: 20px;
     height: 60px;
     left: calc(50% - 297px/2);
     margin-top: 0px;
     background: #62A1EB;
     border-radius: 8px;
+    border: none;
+    cursor: pointer;
 }
 
+.lists--btn:hover {
+    background-color: #1A5DAB;
+}
 .main--btn {
     position: absolute;
     display: flex;
@@ -68,6 +75,12 @@
     width: 88px;
     height: 24px;
     margin-top: 89px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
 
 
 

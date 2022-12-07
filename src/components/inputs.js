@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Inputs({name,note,handleChange,formDataName,error}
+function Inputs({name,note,handleChange,formDataName,error,placeholder}
  ) {
    
   
@@ -9,6 +9,7 @@ function Inputs({name,note,handleChange,formDataName,error}
          <div className='input--name'>
             <h3 className={error ? "h3-P-err": ""}>{name}</h3>
             <input 
+            placeholder={placeholder}
             className= {error ? "input--err" : "input--"}
             type="Text"
             onChange={(e) => handleChange(e)}
