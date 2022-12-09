@@ -25,7 +25,7 @@ function Home() {
 
          <div className="btn">
             <button type="button" className="home--button" onClick={() => navigate("/Secondpage")}>ჩანაწერის დამატება</button>
-            <button type="button" className= "home--button"onClick={() => navigate("/Laptoplists")} >ჩანაწერების სია</button>
+            <button type="button" className= "home--button" onClick={() => navigate("/Laptoplists")} >ჩანაწერების სია</button>
 
          </div>
       </div>
